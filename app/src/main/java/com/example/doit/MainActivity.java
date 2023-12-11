@@ -1,23 +1,23 @@
  package com.example.doit;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.ItemTouchHelper;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+ import android.content.DialogInterface;
+ import android.os.Bundle;
+ import android.view.View;
 
-import android.content.DialogInterface;
-import android.os.Bundle;
-import android.view.View;
+ import androidx.appcompat.app.ActionBar;
+ import androidx.appcompat.app.AppCompatActivity;
+ import androidx.recyclerview.widget.ItemTouchHelper;
+ import androidx.recyclerview.widget.LinearLayoutManager;
+ import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.doit.Adapter.ToDoAdaper;
-import com.example.doit.Model.ToDoModel;
-import com.example.doit.utils.DatabaseHandler;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+ import com.example.doit.Adapter.ToDoAdaper;
+ import com.example.doit.Model.ToDoModel;
+ import com.example.doit.utils.DatabaseHandler;
+ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+ import java.util.ArrayList;
+ import java.util.Collections;
+ import java.util.List;
 
  public class MainActivity extends AppCompatActivity implements DialogClosedListner{
     private RecyclerView taskRecyclerView;
